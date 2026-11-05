@@ -1,0 +1,12 @@
+{
+  "@@locale": "it",
+  "appTitle": "SnapPress",
+  "appLegalese": "© 2026 contributori di SnapPress. Distribuito con licenza BSD-3-Clause.",
+  "homeWelcome": "Da una foto a un post",
+  "homeDescription": "Scegli un'immagine e pubblicala su WordPress, Facebook e Instagram, con i testi suggeriti dall'AI.",
+  "newPost": "Nuovo post",
+  "comingSoon": "Disponibile a breve",
+  "settingsTitle": "Impostazioni",
+  "settingsConnections": "Connessioni",
+  "settingsLicenses": "Licenze open source"
+}

@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze-and-test:
+    name: Analyze, test, licences
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate localisations
+        run: flutter gen-l10n
+
+      - name: Static analysis
+        run: flutter analyze --no-fatal-infos
+
+      - name: Tests (including accessibility guidelines)
+        run: flutter test
+
+      - name: Check dependency licences (no GPL/LGPL/AGPL)
+        run: dart run tool/check_licenses.dart
+
+  build-android:
+    name: Build Android (debug APK)
+    needs: analyze-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Build APK
+        if: hashFiles('android/app/build.gradle', 'android/app/build.gradle.kts') != ''
+        run: |
+          flutter pub get
+          flutter build apk --debug
+
+      - name: Upload APK
+        if: hashFiles('build/app/outputs/flutter-apk/app-debug.apk') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: snappress-debug-apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
+          retention-days: 14
+
+  build-ios:
+    name: Build iOS (no code signing)
+    needs: analyze-and-test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Build iOS
+        if: hashFiles('ios/Runner.xcodeproj/project.pbxproj') != ''
+        run: |
+          flutter pub get
+          flutter build ios --debug --no-codesign

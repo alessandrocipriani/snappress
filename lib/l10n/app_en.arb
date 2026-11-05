@@ -1,0 +1,39 @@
+{
+  "@@locale": "en",
+  "appTitle": "SnapPress",
+  "@appTitle": {
+    "description": "Application name. Not translated."
+  },
+  "appLegalese": "© 2026 SnapPress contributors. Released under the BSD-3-Clause licence.",
+  "@appLegalese": {
+    "description": "Copyright line shown on the licences page."
+  },
+  "homeWelcome": "From a photo to a post",
+  "@homeWelcome": {
+    "description": "Heading on the home screen."
+  },
+  "homeDescription": "Pick an image and publish it on WordPress, Facebook and Instagram, with texts suggested by AI.",
+  "@homeDescription": {
+    "description": "Short explanation on the home screen."
+  },
+  "newPost": "New post",
+  "@newPost": {
+    "description": "Button that starts creating a post."
+  },
+  "comingSoon": "Coming soon",
+  "@comingSoon": {
+    "description": "Shown for features not yet available."
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Title of the settings screen and tooltip of the settings button."
+  },
+  "settingsConnections": "Connections",
+  "@settingsConnections": {
+    "description": "Settings entry for WordPress, Facebook, Instagram and AI connections."
+  },
+  "settingsLicenses": "Open source licences",
+  "@settingsLicenses": {
+    "description": "Settings entry that opens the licences page."
+  }
+}
