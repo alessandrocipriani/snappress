@@ -4,9 +4,10 @@
 import 'package:flutter/material.dart';
 
 import '../../l10n/app_localizations.dart';
+import '../compose/compose_screen.dart';
 import '../settings/settings_screen.dart';
 
-/// Start screen. In phase 1 the "New post" button will open the composer.
+/// Start screen.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -57,11 +58,11 @@ class HomeScreen extends StatelessWidget {
                 FilledButton.icon(
                   icon: const Icon(Icons.add_photo_alternate_outlined),
                   label: Text(l10n.newPost),
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text(l10n.comingSoon)),
-                    );
-                  },
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const ComposeScreen(),
+                    ),
+                  ),
                 ),
               ],
             ),

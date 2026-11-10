@@ -4,7 +4,10 @@
 import 'package:flutter/material.dart';
 
 import 'app.dart';
+import 'core/app_services.dart';
 
-void main() {
-  runApp(const SnapPressApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final services = await AppServices.create();
+  runApp(SnapPressApp(services: services));
 }

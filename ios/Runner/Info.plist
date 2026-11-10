@@ -2,12 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>SnapPress uses Face ID to unlock the app.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>SnapPress needs access to your photos to choose the image to publish.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>SnapPress uses the camera to take the photo to publish.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Snappress</string>
+	<string>SnapPress</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

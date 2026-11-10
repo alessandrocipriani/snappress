@@ -2,7 +2,7 @@ name: snappress
 description: "Create posts for WordPress, Facebook and Instagram starting from an image on your device."
 publish_to: "none"
 repository: https://github.com/alessandrocipriani/snappress
-version: 0.1.0+1
+version: 0.2.0+2
 
 environment:
   sdk: ^3.5.0
@@ -13,6 +13,13 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: any
+  # All dependencies below are BSD-3-Clause (checked by tool/check_licenses.dart).
+  crypto: ^3.0.3
+  flutter_secure_storage: ^9.2.2
+  http: ^1.2.2
+  image_picker: ^1.1.2
+  local_auth: ^2.3.0
+  shared_preferences: ^2.3.2
 
 dev_dependencies:
   flutter_test:

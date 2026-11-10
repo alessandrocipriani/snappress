@@ -6,34 +6,408 @@
   },
   "appLegalese": "© 2026 SnapPress contributors. Released under the BSD-3-Clause licence.",
   "@appLegalese": {
-    "description": "Copyright line shown on the licences page."
+    "description": "Copyright line on the licences page."
   },
   "homeWelcome": "From a photo to a post",
   "@homeWelcome": {
-    "description": "Heading on the home screen."
+    "description": "Home heading."
   },
   "homeDescription": "Pick an image and publish it on WordPress, Facebook and Instagram, with texts suggested by AI.",
   "@homeDescription": {
-    "description": "Short explanation on the home screen."
+    "description": "Home explanation."
   },
   "newPost": "New post",
   "@newPost": {
-    "description": "Button that starts creating a post."
+    "description": "Button/title to create a post."
   },
   "comingSoon": "Coming soon",
   "@comingSoon": {
-    "description": "Shown for features not yet available."
+    "description": "Feature not yet available."
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "Generic confirm button."
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Generic cancel button."
+  },
+  "remove": "Remove",
+  "@remove": {
+    "description": "Generic remove button."
+  },
+  "fieldRequired": "This field is required",
+  "@fieldRequired": {
+    "description": "Validation error for empty fields."
+  },
+  "pleaseWait": "Please wait",
+  "@pleaseWait": {
+    "description": "Screen reader label of progress indicators."
+  },
+  "showPassword": "Show password",
+  "@showPassword": {
+    "description": "Tooltip of the eye button."
+  },
+  "hidePassword": "Hide password",
+  "@hidePassword": {
+    "description": "Tooltip of the eye button."
+  },
+  "copyLink": "Copy link",
+  "@copyLink": {
+    "description": "Copy URL button."
+  },
+  "linkCopied": "Link copied",
+  "@linkCopied": {
+    "description": "Snackbar after copying."
+  },
+  "lockSetupTitle": "Protect SnapPress",
+  "@lockSetupTitle": {
+    "description": "Title of the first-launch password screen."
+  },
+  "lockSetupDescription": "Choose a password to open the app. It protects the credentials of your sites and social accounts stored on this device.",
+  "@lockSetupDescription": {
+    "description": "First-launch explanation."
+  },
+  "lockPasswordLabel": "Password",
+  "@lockPasswordLabel": {
+    "description": "Password field label."
+  },
+  "lockPasswordHelper": "At least {min} characters",
+  "@lockPasswordHelper": {
+    "description": "Password field helper.",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "lockPasswordTooShort": "The password must have at least {min} characters",
+  "@lockPasswordTooShort": {
+    "description": "Validation error.",
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "lockPasswordConfirmLabel": "Repeat password",
+  "@lockPasswordConfirmLabel": {
+    "description": "Confirm field label."
+  },
+  "lockPasswordMismatch": "The passwords do not match",
+  "@lockPasswordMismatch": {
+    "description": "Validation error."
+  },
+  "lockUseBiometrics": "Unlock with biometrics",
+  "@lockUseBiometrics": {
+    "description": "Switch label (Face ID, Touch ID, fingerprint)."
+  },
+  "lockUseBiometricsDescription": "Face ID, Touch ID or fingerprint. The password always works too.",
+  "@lockUseBiometricsDescription": {
+    "description": "Switch description."
+  },
+  "lockSetupButton": "Save and continue",
+  "@lockSetupButton": {
+    "description": "First-launch confirm button."
+  },
+  "lockUnlockTitle": "SnapPress is locked",
+  "@lockUnlockTitle": {
+    "description": "Unlock screen heading."
+  },
+  "lockUnlockButton": "Unlock",
+  "@lockUnlockButton": {
+    "description": "Unlock button."
+  },
+  "lockUseBiometricsButton": "Use biometrics",
+  "@lockUseBiometricsButton": {
+    "description": "Button to retry biometric unlock."
+  },
+  "lockBiometricReason": "Unlock SnapPress",
+  "@lockBiometricReason": {
+    "description": "Reason shown by the OS biometric prompt."
+  },
+  "lockWrongPassword": "Wrong password",
+  "@lockWrongPassword": {
+    "description": "Unlock error."
+  },
+  "lockLockedOut": "Too many attempts. Try again in {seconds} seconds.",
+  "@lockLockedOut": {
+    "description": "Lock-out error.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
   },
   "settingsTitle": "Settings",
   "@settingsTitle": {
-    "description": "Title of the settings screen and tooltip of the settings button."
+    "description": "Settings title and tooltip."
   },
   "settingsConnections": "Connections",
   "@settingsConnections": {
-    "description": "Settings entry for WordPress, Facebook, Instagram and AI connections."
+    "description": "Settings section."
+  },
+  "settingsWordPressSubtitle": "Site, user and Application Password",
+  "@settingsWordPressSubtitle": {
+    "description": "WordPress entry subtitle."
+  },
+  "settingsAi": "AI text generation",
+  "@settingsAi": {
+    "description": "AI entry."
+  },
+  "settingsSecurity": "Security",
+  "@settingsSecurity": {
+    "description": "Settings section."
+  },
+  "settingsLockNow": "Lock now",
+  "@settingsLockNow": {
+    "description": "Locks the app."
   },
   "settingsLicenses": "Open source licences",
   "@settingsLicenses": {
-    "description": "Settings entry that opens the licences page."
+    "description": "Opens licences page."
+  },
+  "wpIntro": "SnapPress publishes on your site with an Application Password, a separate password you can revoke at any time. No plugin is needed.",
+  "@wpIntro": {
+    "description": "WordPress settings intro."
+  },
+  "wpOpenGuide": "How to create the Application Password",
+  "@wpOpenGuide": {
+    "description": "Link to the guide."
+  },
+  "wpSiteUrl": "Site address",
+  "@wpSiteUrl": {
+    "description": "Field label."
+  },
+  "wpUsername": "Username",
+  "@wpUsername": {
+    "description": "Field label."
+  },
+  "wpUsernameHelper": "The name you use to log in, not the display name",
+  "@wpUsernameHelper": {
+    "description": "Field helper."
+  },
+  "wpAppPassword": "Application Password",
+  "@wpAppPassword": {
+    "description": "Field label. Keep the WordPress term."
+  },
+  "wpAppPasswordHelper": "Users → Profile → Application Passwords in your WordPress dashboard. Spaces are fine.",
+  "@wpAppPasswordHelper": {
+    "description": "Field helper."
+  },
+  "wpTestAndSave": "Test and save",
+  "@wpTestAndSave": {
+    "description": "Button."
+  },
+  "wpRemove": "Remove connection",
+  "@wpRemove": {
+    "description": "Button."
+  },
+  "wpRemoveTitle": "Remove WordPress?",
+  "@wpRemoveTitle": {
+    "description": "Dialog title."
+  },
+  "wpRemoveMessage": "The credentials will be deleted from this device. The Application Password stays valid on the site until you revoke it there.",
+  "@wpRemoveMessage": {
+    "description": "Dialog message."
+  },
+  "wpRemoved": "Connection removed",
+  "@wpRemoved": {
+    "description": "Status message."
+  },
+  "wpTesting": "Connecting to the site…",
+  "@wpTesting": {
+    "description": "Status message."
+  },
+  "wpConnected": "Connected as {name}. Settings saved.",
+  "@wpConnected": {
+    "description": "Success.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "wpErrorInvalidUrl": "This does not look like a valid address",
+  "@wpErrorInvalidUrl": {
+    "description": "Validation."
+  },
+  "wpErrorHttpsRequired": "The site must use HTTPS: WordPress disables Application Passwords without it",
+  "@wpErrorHttpsRequired": {
+    "description": "Validation."
+  },
+  "wpErrorNetwork": "Cannot reach the site. Check the address and your connection.",
+  "@wpErrorNetwork": {
+    "description": "Error."
+  },
+  "wpErrorCredentials": "Username or Application Password not accepted. If they are correct, your server may be removing the Authorization header: see the guide.",
+  "@wpErrorCredentials": {
+    "description": "Error 401."
+  },
+  "wpErrorForbidden": "Access denied. A security plugin or firewall may be blocking the REST API.",
+  "@wpErrorForbidden": {
+    "description": "Error 403."
+  },
+  "wpErrorNoApi": "The WordPress REST API was not found at this address.",
+  "@wpErrorNoApi": {
+    "description": "Error 404."
+  },
+  "wpErrorRole": "This user cannot upload images. Give them at least the Author role.",
+  "@wpErrorRole": {
+    "description": "Error: missing capability."
+  },
+  "wpErrorGeneric": "WordPress replied: {message}",
+  "@wpErrorGeneric": {
+    "description": "Other error.",
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "wpGuideTitle": "WordPress guide",
+  "@wpGuideTitle": {
+    "description": "Guide title."
+  },
+  "wpGuideRequirementsTitle": "What your site needs",
+  "@wpGuideRequirementsTitle": {
+    "description": "Section title."
+  },
+  "wpGuideRequirements": "• WordPress 5.6 or later\n• HTTPS enabled\n• A user with the Author, Editor or Administrator role (a dedicated Author user is recommended)",
+  "@wpGuideRequirements": {
+    "description": "Requirements list."
+  },
+  "wpGuideStepsTitle": "Create the Application Password",
+  "@wpGuideStepsTitle": {
+    "description": "Section title."
+  },
+  "wpGuideStepLabel": "Step {step}",
+  "@wpGuideStepLabel": {
+    "description": "Screen reader prefix for each step.",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      }
+    }
+  },
+  "wpGuideStep1": "Log in to your WordPress dashboard with the user SnapPress will use.",
+  "@wpGuideStep1": {
+    "description": "Step."
+  },
+  "wpGuideStep2": "Open Users → Profile.",
+  "@wpGuideStep2": {
+    "description": "Step."
+  },
+  "wpGuideStep3": "Scroll down to Application Passwords, type \"SnapPress\" as the name and tap Add New Application Password.",
+  "@wpGuideStep3": {
+    "description": "Step."
+  },
+  "wpGuideStep4": "Copy the password right away: WordPress shows it only once.",
+  "@wpGuideStep4": {
+    "description": "Step."
+  },
+  "wpGuideStep5": "Come back here, enter site address, username and the password, then tap Test and save.",
+  "@wpGuideStep5": {
+    "description": "Step."
+  },
+  "wpGuideTroubleshootingTitle": "If it does not work",
+  "@wpGuideTroubleshootingTitle": {
+    "description": "Section title."
+  },
+  "wpGuideTroubleshooting": "• No Application Passwords section: enable HTTPS, update WordPress or check your security plugin.\n• Credentials refused although correct: on Apache add to .htaccess\n  SetEnvIf Authorization \"(.*)\" HTTP_AUTHORIZATION=$1\n• Access denied: allow /wp-json/ in your security plugin or hosting firewall.\n• You can revoke the password at any time from the same profile page.",
+  "@wpGuideTroubleshooting": {
+    "description": "Troubleshooting list."
+  },
+  "composeFromGallery": "Gallery",
+  "@composeFromGallery": {
+    "description": "Pick from gallery."
+  },
+  "composeFromCamera": "Camera",
+  "@composeFromCamera": {
+    "description": "Take a photo."
+  },
+  "composeNoImage": "No image selected",
+  "@composeNoImage": {
+    "description": "Placeholder label."
+  },
+  "composeSelectedImage": "Selected image",
+  "@composeSelectedImage": {
+    "description": "Image label when no alt text."
+  },
+  "composePickError": "Could not open the image. Check the app permissions in system settings.",
+  "@composePickError": {
+    "description": "Picker error."
+  },
+  "composeAltText": "Image description (alt text)",
+  "@composeAltText": {
+    "description": "Field label."
+  },
+  "composeAltTextHelper": "Describe what the image shows for people who use a screen reader. Published together with the image.",
+  "@composeAltTextHelper": {
+    "description": "Field helper."
+  },
+  "composeTitle": "Title",
+  "@composeTitle": {
+    "description": "Field label."
+  },
+  "composeBody": "Text",
+  "@composeBody": {
+    "description": "Field label."
+  },
+  "composeBodyHelper": "Leave an empty line between paragraphs",
+  "@composeBodyHelper": {
+    "description": "Field helper."
+  },
+  "composeHashtags": "Hashtags",
+  "@composeHashtags": {
+    "description": "Field label."
+  },
+  "composeDestinations": "Publish on",
+  "@composeDestinations": {
+    "description": "Section title."
+  },
+  "composeWordPressMissing": "Connect your WordPress site to publish",
+  "@composeWordPressMissing": {
+    "description": "Shown when WordPress is not configured."
+  },
+  "composePublishNow": "Publish immediately",
+  "@composePublishNow": {
+    "description": "Switch."
+  },
+  "composePublishNowOn": "The post will be visible on the site right away",
+  "@composePublishNowOn": {
+    "description": "Switch on."
+  },
+  "composePublishNowOff": "Saved as a draft to review in WordPress",
+  "@composePublishNowOff": {
+    "description": "Switch off."
+  },
+  "composeSaveDraftButton": "Save draft",
+  "@composeSaveDraftButton": {
+    "description": "Button."
+  },
+  "composePublishButton": "Publish",
+  "@composePublishButton": {
+    "description": "Button."
+  },
+  "composePublishing": "Publishing…",
+  "@composePublishing": {
+    "description": "Button while publishing."
+  },
+  "composeNeedImage": "Choose an image to continue",
+  "@composeNeedImage": {
+    "description": "Hint under the button."
+  },
+  "composePublished": "Published",
+  "@composePublished": {
+    "description": "Dialog title."
+  },
+  "composeDraftSaved": "Draft saved",
+  "@composeDraftSaved": {
+    "description": "Dialog title."
+  },
+  "composePublishFailed": "Publishing failed",
+  "@composePublishFailed": {
+    "description": "Dialog title."
   }
 }

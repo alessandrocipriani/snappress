@@ -12,6 +12,7 @@ class PostDraft {
     this.title,
     this.hashtags = const [],
     this.altText,
+    this.asDraft = true,
   });
 
   final Uint8List imageBytes;
@@ -22,6 +23,11 @@ class PostDraft {
 
   /// Description of the image for screen-reader users.
   final String? altText;
+
+  /// Save as draft instead of publishing immediately (where supported).
+  final bool asDraft;
+
+  String get imageMimeType => mimeTypeForFileName(imageFileName);
 }
 
 /// Outcome of a publish attempt on one platform.
@@ -46,4 +52,19 @@ abstract interface class Publisher {
   Future<bool> testConnection();
 
   Future<PublishResult> publish(PostDraft draft);
+}
+
+/// MIME type from the file extension (images only).
+String mimeTypeForFileName(String fileName) {
+  final dot = fileName.lastIndexOf('.');
+  final extension = dot < 0 ? '' : fileName.substring(dot + 1).toLowerCase();
+  return switch (extension) {
+    'jpg' || 'jpeg' => 'image/jpeg',
+    'png' => 'image/png',
+    'gif' => 'image/gif',
+    'webp' => 'image/webp',
+    'heic' => 'image/heic',
+    'heif' => 'image/heif',
+    _ => 'application/octet-stream',
+  };
 }

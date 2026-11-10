@@ -2,8 +2,8 @@
 
 | Phase | Content | Status |
 |---|---|---|
-| **0 – Setup** | Repository, BSD-3-Clause licence, README, CI (analysis, tests, licence check, Android and iOS builds), IT/EN localisation, base architecture | ✅ In progress |
-| **1 – MVP** | App lock (PIN/password + biometrics), image picker, post editor, WordPress connection with in-app guide, publish as draft or live | ⏳ |
+| **0 – Setup** | Repository, BSD-3-Clause licence, README, CI (analysis, tests, licence check, Android and iOS builds), IT/EN localisation, base architecture | ✅ Done |
+| **1 – MVP** | App lock (password + biometrics), image picker, post editor, WordPress connection with in-app guide, publish as draft or live | 🚧 In progress |
 | **2 – AI** | Configurable providers (cloud with user key, self-hosted OpenAI-compatible endpoint), generated texts and alt text | ⏳ |
 | **3 – Meta** | "Bring your own Meta app" guide, Facebook Pages, Instagram via the WordPress image URL | ⏳ |
 | **4 – Polish** | Scheduled posts, history, retry of failed destinations, accessibility audit with TalkBack/VoiceOver, more languages | ⏳ |
